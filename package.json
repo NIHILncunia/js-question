@@ -1,0 +1,33 @@
+{
+  "name": "nihil-webpack-template",
+  "version": "1.0.0",
+  "description": "웹팩을 이용한 웹 개발 템플릿",
+  "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nihil-template/nihil-webpack-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nihil-template/nihil-webpack-template/issues"
+  },
+  "homepage": "https://github.com/nihil-template/nihil-webpack-template#readme",
+  "scripts": {
+    "serve": "webpack serve --config webpack.dev.ts",
+    "prod": "webpack --config webpack.prod.ts"
+  },
+  "keywords": [],
+  "author": "NIHILncunia",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-import": "^2.26.0",
+    "typescript": "^4.8.4"
+  }
+}
