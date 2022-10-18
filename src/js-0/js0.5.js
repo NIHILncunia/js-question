@@ -4,26 +4,23 @@
 
 'use strict';
 
-let num1;
-let num2;
-let num3;
+let num1, num2, num3;
 let average;
 
 for (; ;) {
-  num1 = +prompt('정수 1 : ');
-  console.log(num1);
-  if (num1 !== 0 || num1 !== null) {
-    num2 = +prompt('정수 2 : ');
-    console.log(num2);
-    if (num2 !== 0 || num2 !== null) {
-      num3 = +prompt('정수 3 : ');
-      console.log(num3);
-      if (num3 !== 0 || num3 !== null) {
+  num1 = +prompt('정수 1:');
+  if (num1 > 0) {
+    num2 = +prompt('정수 2:');
+    if (num2 > 0) {
+      num3 = +prompt('정수 3:');
+      if (num3 > 0) {
         average = (num1 + num2 + num3) / 3;
         break;
       }
     }
   }
+
+  alert('처음부터 다시 입력하세요.');
 }
 
-console.log(average);
+alert(`${num1}, ${num2}, ${num3}의 평균: ${average}`);
