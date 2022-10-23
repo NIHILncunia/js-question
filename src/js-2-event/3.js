@@ -9,7 +9,6 @@ const $number = document.querySelector('h1');
 const $button = document.querySelector('button');
 
 $button.addEventListener('click', function () {
-  console.log('클릭됨');
   $number.textContent = +$number.textContent + 1;
 
   if ($number.textContent % 5 === 0) {
